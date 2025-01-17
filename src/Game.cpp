@@ -45,3 +45,44 @@ Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, 
         Game::va[i].color = sf::Color(100+rand()%155, 100+rand()%155, 100+rand()%155, 255);
     }
 }
+
+void Game::Run(){
+    Game::font.loadFromFile("..fonts/OpenSans-Light.ttf");
+    SetSFMLWindow(this->getSystemHandle());
+    sf::Time start = Game::clock.getElapsedTime();
+    sf::Time tick = sf::microseconds(0);
+
+    sf::Event e;
+    //inicjacja interceptora
+    Interceptor itor;
+    sf::Transform vaMove; // ruszanie gwiazdkami
+    sf::Time tpause; // zmienna pomocnicza do pauzy
+
+    unsigned steps = 0;
+
+    while(this->isOpen()){
+        if(itor.hp > 0 && this->t.asSeconds() <= 0){
+            itor.pt = itor.pt + itor.hp *3 // END OF TIME
+            itor.hp = 0;
+            itor.destroy = false;
+        }
+        while(this->pollEvent(e)){
+            if(e.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) this->close();
+            if(e.type == sf::Event::KeyPressed && e.key.code == sf::Keyboard ::P){
+                this->pause = (this->pause)? false: true;
+            }
+            if(!this->pasue) itor.catchEvents(e);
+        }
+        if(this->pause){
+            this->clear(sf::Color(0xffffffff));
+            this->draw(this->bg); //tło
+            this->ss.str("");
+            this->strT.setString("Pasue - klick [p] to unpause");
+            this->draw(this->strT);
+            this->display();
+            Game::clock.restart();
+            tpause = this->t;
+            continue;
+        }
+    }
+}
