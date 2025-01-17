@@ -9,6 +9,16 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
+#define FRAME_LIMIT 75
+
+#define POSX 10
+#define POSY 10
+
+#define SCREENX 800
+#define SCREENY 600
+
+#define CBITS 32
+
 
 class Rock;
 class Interceptor;
@@ -58,7 +68,7 @@ class Game: public sf::RenderWindow{
 
 
         ///Konstruktor głowny
-        Game();
+        Game() = default;
         Game(sf::String);
 
         //uruchamia gre
@@ -77,3 +87,4 @@ class Game: public sf::RenderWindow{
         static void UpdateRocks(Game &);
         virtual ~Game();
 };
+
