@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <string>
@@ -8,6 +9,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
+
+#include "Interceptor.h"
 
 #define FRAME_LIMIT 75
 
@@ -25,10 +28,6 @@ class Interceptor;
 class Game;
 class Bullet;
 class MySounds;
-
-
-
-
 
 
 /// GAME 
