@@ -84,5 +84,53 @@ void Game::Run(){
             tpause = this->t;
             continue;
         }
+        
+        //Losujemy kamień 
+        if(itor.hp > 0 && !(rand()%20)) Game::Rocks.push_back(Rock());
+
+        this->clear(sf::Color(0xffffffff));
+        this->draw(this->bg);
+
+        //pył gwiezdny
+        this->draw(Game::va, 1000, sf::PrimitiveType::Points);
+
+        for(int i=0; i<1000; i++){
+            Game::va[i].position.x -= (i%3 +1);
+            if(Game::va[i].position.x <= 0){
+                Game::va[i].position = sf::Vector2f(SCREENX, Game::va[i].position.y);
+            }
+        }
+
+        //lecą głazy
+        if(tor.hp >0) Game::UpdateRocks(*this);
+        else{ this->Gogg(&itor);}
+
+        //statek
+        itor.paint(*this);
+
+        //czas
+        this->ss.str("");
+        this->ss << "[w][s]-move, [a][d]-firemode, [space]-shoot    ";
+
+        if(itor.hp > 0){
+            this->ss << (int) this->t.asSeconds() << "sek ";
+        }
+        this->ss <<itor.bulets.size() << "/" << itor.maxBullets << " bulets";
+        this->strT.setString(this->ss.str());
+        this->ss.str("");
+        this->draw(this->strT);
+
+        sf::sleep(sf::milliseconds(10));
+        this->display();
+
+        if(!this->pause) this->t = tpause - Game::clock.getElapsedTime();
+
+        tick = Game::clock.getElapsedTime() - start;
+        if(tick.asMilliseconds() > 1000){
+            std::cout << "średnio: " << steps << "k/s\n";
+            start = Game::clock.getElapsedTime();
+            steps = 0;
+        }
+        steps++;
     }
 }
