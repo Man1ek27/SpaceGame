@@ -146,3 +146,63 @@ void Game::UpdateRocks(Game &g){
         g.draw(*r);
     }
 }
+
+void Game::Gogg(Interceptor *i){
+    this->ss << "Wynik = " << i->pt << " pkt";
+    this->gg.setString(this->ss.str());
+    this->ss.str("");
+    this->draw(this->gg);
+}
+
+//czy punkt zawiera sięwewnątrz bloku wypuchłych punktów ?
+bool Game::IsPointInsidePolygon(std::vector <sf::Vector2f> &points, const sf::Vector2f &vec){
+    int is = -1;
+    int n = points.size();
+    float xi, yi,xj, yj, d;
+    for(int i=0; i<n; i++){
+        xi = points[i].x;
+        yi = points[i].y;
+
+        xj = (i+1==n)? points[0].x: points[i+1].x;
+        yj = (i+1==n)? points[0].y: points[i+1].y;
+        d = (vec.x -xi)*(yj - yi) - (vec.y - yi)*(xj - xi);
+        if(d == 0) continue;
+        else{
+            if(is == -1){
+                is = d > 0.0;
+            }
+            else if((d > 0.0) != is) return false;
+        }
+    }
+    return true;
+}
+
+bool Game::IsPointInsidePolygon(const sf::Transform &t, std::vector<sf::Vector2f> &points, const sf::Vector2f &vec){
+    int is = -1;
+    int n = points.size();
+    float xi, yi,xj, yj, d;
+    for(int i=0; i<n; i++){
+        sf:: Vector2f point(t.transformPoint(points[i]));
+        xi = point.x;
+        yi = point.y;
+        if(i+1 ==n){
+            sf::Vector2f point2(t.transformPoint(points[0]));
+            xj = point2.x;
+            yj = point2.y;
+        }
+        else{
+            sf::Vector2f point2(t.transformPoint(points[i+1]));
+            xj = point2.x;
+            yj = point2.y;
+        }
+        
+        if(d == 0) continue;
+        else{
+            if(is == -1){
+                is = d > 0.0;
+            }
+            else if((d > 0.0) != is) return false;
+        }
+    }
+    return true;
+}
