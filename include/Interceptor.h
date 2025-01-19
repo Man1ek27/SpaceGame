@@ -77,6 +77,4 @@ class Interceptor: public sf::Sprite{
         void Shoot();
 
         virtual ~Interceptor();
-
-    
 };
