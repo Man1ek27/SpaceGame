@@ -134,3 +134,15 @@ void Game::Run(){
         steps++;
     }
 }
+
+void Game::UpdateRocks(Game &g){
+    Rock *r;
+    for(auto i = Game::Rocks.begin(); i != Game::Rocks.end(); i++){
+        r = &*i;
+        if(r->kill || r->getPosition().x <0 || r->getPosition().y < -50 || r->getPosition().y > SCREENY + 50){
+            Game::Rocks.erase(i); i--; continue;
+        }
+        r->Update();
+        g.draw(*r);
+    }
+}
