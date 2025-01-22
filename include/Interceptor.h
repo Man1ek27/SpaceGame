@@ -13,6 +13,7 @@
 #include "Game.h"
 
 
+
 class Interceptor: public sf::Sprite{
     public:
         //Dzwiek statku
@@ -57,7 +58,7 @@ class Interceptor: public sf::Sprite{
         //srting stream do przeróbek 
         std::stringstream ss;
         //zniszczony przed końcem gry
-        bool destry = true;
+        bool destroy = true;
 
         //piksele do animacji dymu silnika
         sf::Vertex smoke[100];

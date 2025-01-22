@@ -44,7 +44,7 @@ class Game: public sf::RenderWindow{
         static sf::Vertex va[1000];
 
         //Font
-        static sf::Font font;
+        static sf::Font Font;
 
         //napis konczowy
         sf::Text gg;

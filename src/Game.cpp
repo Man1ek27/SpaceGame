@@ -2,7 +2,7 @@
 
 std::vector <Rock> Game::Rocks;
 sf::Vertex Game::va[1000];
-sf::Font Game::font;
+sf::Font Game::Font;
 
 Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, CBITS), title){
     this->setActive(true);
@@ -13,13 +13,13 @@ Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, 
     this->setPosition(sf::Vector2i(POSX, POSY));
     this->setKeyRepeatEnabled(false);
 
-    this->gg.setFont(Game::font);
+    this->gg.setFont(Game::Font);
     this->gg.setPosition(SCREENX/6, SCREENY/3);
     this->gg.setCharacterSize(30);
     this->gg.setFillColor(sf::Color(0xffffffff));
     this->gg.setStyle(sf::Text::Bold);
 
-    this->strT.setFont(font);
+    this->strT.setFont(Font);
     this->strT.setPosition(SCREENX*0.2, 22);
     this->strT.setCharacterSize(16);
     this->strT.setFillColor(sf::Color(0xff6464ff));
@@ -47,7 +47,10 @@ Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, 
 }
 
 void Game::Run(){
-    Game::font.loadFromFile("..fonts/OpenSans-Light.ttf");
+    Game::Font.loadFromFile("..Fonts/OpenSans-Light.ttf");
+    Bullet::tx.loadFromFile("../images/bullet2.png"); // animacja pocisków
+    Rock::tx.loadFromFile("../images/rock.png"); 
+    Rock::txg.loadFromFile("../images/rockg.png");
     SetSFMLWindow(this->getSystemHandle());
     sf::Time start = Game::clock.getElapsedTime();
     sf::Time tick = sf::microseconds(0);
@@ -196,6 +199,7 @@ bool Game::IsPointInsidePolygon(const sf::Transform &t, std::vector<sf::Vector2f
             yj = point2.y;
         }
         
+        d = (vec.x -xi)*(yj - yi) - (vec.y - yi)*(xj - xi);
         if(d == 0) continue;
         else{
             if(is == -1){
