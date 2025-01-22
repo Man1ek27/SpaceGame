@@ -47,10 +47,11 @@ Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, 
 }
 
 void Game::Run(){
-    Game::Font.loadFromFile("..Fonts/OpenSans-Light.ttf");
     Bullet::tx.loadFromFile("../images/bullet2.png"); // animacja pocisków
     Rock::tx.loadFromFile("../images/rock.png"); 
     Rock::txg.loadFromFile("../images/rockg.png");
+    Game::Font.loadFromFile("..Fonts/OpenSans-Light.ttf");
+    
     SetSFMLWindow(this->getSystemHandle());
     sf::Time start = Game::clock.getElapsedTime();
     sf::Time tick = sf::microseconds(0);
