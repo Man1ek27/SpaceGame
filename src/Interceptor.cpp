@@ -133,6 +133,45 @@ void Interceptor::Update(Game &theGame){
             }
         }
     }
+
+    //testy kolizji dla każdego punktu
+    if(this->hp > 0){
+        Rock *r; 
+        for(auto i = Game::Rocks.begin(); i != Game::Rocks.end(); i++){
+            r = &(*i);
+            if(r-> getGlobalBounds().left <= this->getGlobalBounds().left + this->getGlobalBounds().width && 
+                this->getGlobalBounds().intersects(r->getGlobalBounds())){
+                    bool coll = false;
+                    for(auto v = this->localColisionPoints.begin(); v != this->localColisionPoints.end(); v++){
+                        sf::Vector2f p(*v);
+                        float x = this->skin.getSize().x;
+                        float y = this->skin.getSize().y;
+                        if(Game::IsPointInsidePolygon(r->getTransform(), r->vertex, sf::Vector2f(this->getPosition().x -x + p.x, this->getPosition().y -y + p.y))){
+                            if(r->heal){ //leczę i zwiekszam ilość pocisków
+                                r->kill = true;
+                                this->hp += r->GetPointCount(); //heal
+                                coll = true;
+                                this->sounds->play("skok3", 75, false, 1.f, false);
+                                this->maxBullets += 4;
+                                break;
+                            }
+                            else{
+                                r->kill = true;
+                                this->hp -= r->GetPointCount(); //damage
+                                coll = true;
+                                if(this-> hp <=0 ){
+                                    this->sounds->play("fly", 50, true, 1.f, false);
+                                    this->destroy = true;
+                                }
+                                else this->sounds->play("crash", 75, false, 1.f, false);
+                                break;
+                            }
+                        }
+                    }
+                    if(coll) break;
+                }
+        }
+    }
 }
 
 void Interceptor::Shoot(){
@@ -143,3 +182,4 @@ void Interceptor::Shoot(){
     this->bullets.push_back(Bullet(sf::Vector2(this->getPosition().x + this->getTexture()->getSize().x/2, this->getPosition().y + 10.f), this));
     this->sounds->play("shoot2", 100, false, 0.85f + rand()%31/100.f, false);
 }
+
