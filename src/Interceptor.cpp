@@ -183,3 +183,17 @@ void Interceptor::Shoot(){
     this->sounds->play("shoot2", 100, false, 0.85f + rand()%31/100.f, false);
 }
 
+void Interceptor::Paint(Game &game){
+    this->Update(game);
+    game.draw(*this);
+    if(this->hp >0) game.draw(this->hpRect);
+    for(auto i = this->bullets.begin(); i != this->bullets.end(); i++){
+        game.draw(*i);
+    }
+    game.draw(this->strPt);
+    game.draw(this->strHp);
+    if(this->speed > 0.1f || this->speed < -0.1f){
+        game.draw(this->smoke, 100, sf::PrimitiveType::Points);
+    }
+    
+}
