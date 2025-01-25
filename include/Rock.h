@@ -16,35 +16,36 @@
 
 
 class Rock: public sf::CircleShape{
-    //statyczne tekstury
-    static sf::Texture tx;
-    static sf::Texture txg;
+    public:
+        //statyczne tekstury
+        static sf::Texture tx;
+        static sf::Texture txg;
 
-    //prędkosć standardowa
-    float speed;
+        //prędkosć standardowa
+        float speed;
 
-    //skosy w ruchu
-    float direct = 0;
+        //skosy w ruchu
+        float direct = 0;
 
-    //wierzchołki konteneru
-    std::vector<sf::Vector2f> vertex;
+        //wierzchołki konteneru
+        std::vector<sf::Vector2f> vertex;
 
-    //trafienie
-    bool hit = false;
+        //trafienie
+        bool hit = false;
 
-    //uśmiercenie
-    bool kill = false;
+        //uśmiercenie
+        bool kill = false;
 
-    //rotacja 
-    int rot;
+        //rotacja 
+        int rot;
 
-    //czy leczy
-    bool heal = false;
+        //czy leczy
+        bool heal = false;
 
-    Rock();
+        Rock();
 
-    //nowa pozycja, zmiana animacji
-    void Update();
+        //nowa pozycja, zmiana animacji
+        void Update();
 
-    virtual ~Rock();
+        virtual ~Rock();
 };

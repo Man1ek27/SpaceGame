@@ -11,6 +11,9 @@
 #include <SFML/Network.hpp>
 
 #include "Interceptor.h"
+#include "Bullet.h"
+#include "Interceptor.h"
+#include "Rock.h"
 
 #define FRAME_LIMIT 75
 
@@ -23,10 +26,7 @@
 #define CBITS 32
 
 
-class Rock;
-class Interceptor;
-class Game;
-class Bullet;
+
 class MySounds;
 
 

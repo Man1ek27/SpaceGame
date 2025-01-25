@@ -66,7 +66,7 @@ void Game::Run(){
 
     while(this->isOpen()){
         if(itor.hp > 0 && this->t.asSeconds() <= 0){
-            itor.pt = itor.pt + itor.hp *3 // END OF TIME
+            itor.pt = itor.pt + itor.hp *3; // END OF TIME
             itor.hp = 0;
             itor.destroy = false;
         }
@@ -75,7 +75,7 @@ void Game::Run(){
             if(e.type == sf::Event::KeyPressed && e.key.code == sf::Keyboard ::P){
                 this->pause = (this->pause)? false: true;
             }
-            if(!this->pasue) itor.catchEvents(e);
+            if(!this->pause) itor.CatchEvents(e);
         }
         if(this->pause){
             this->clear(sf::Color(0xffffffff));
@@ -106,11 +106,11 @@ void Game::Run(){
         }
 
         //lecą głazy
-        if(tor.hp >0) Game::UpdateRocks(*this);
+        if(itor.hp >0) Game::UpdateRocks(*this);
         else{ this->Gogg(&itor);}
 
         //statek
-        itor.paint(*this);
+        itor.Paint(*this);
 
         //czas
         this->ss.str("");
@@ -119,7 +119,7 @@ void Game::Run(){
         if(itor.hp > 0){
             this->ss << (int) this->t.asSeconds() << "sek ";
         }
-        this->ss <<itor.bulets.size() << "/" << itor.maxBullets << " bulets";
+        this->ss <<itor.bullets.size() << "/" << itor.maxBullets << " bulets";
         this->strT.setString(this->ss.str());
         this->ss.str("");
         this->draw(this->strT);
