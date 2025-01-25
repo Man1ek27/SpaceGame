@@ -13,6 +13,12 @@
 #include "Game.h"
 #include "Interceptor.h"
 
+class Bullet;
+class Interceptor;
+class MySounds;
+class Game;
+class Rock;
+
 class Bullet: public sf::CircleShape{
     public:
         //statyczna tekstura

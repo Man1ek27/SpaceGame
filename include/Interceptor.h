@@ -12,6 +12,9 @@
 
 #include "Game.h"
 #include "MySounds.h"
+#include "Bullet.h"
+
+
 
 
 

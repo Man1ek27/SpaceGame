@@ -26,7 +26,11 @@
 #define CBITS 32
 #define MAX_SOUNDS 40
 
-
+class Bullet;
+class Interceptor;
+class MySounds;
+class Game;
+class Rock;
 
 
 

@@ -47,7 +47,7 @@ bool Bullet::collTest(){
             Game::IsPointInsidePolygon(r->getTransform(), r->vertex, this->getPosition())){
                 r->hit = true;
                 this->kill = true;
-                if(!r->heal) this->interceptor->sounds->play("crash2", 20, false, 0.95f +(rand()%11)/100, false);
+                if(!r->heal) this->interceptor->sounds->Play("crash2", 20, false, 0.95f +(rand()%11)/100, false);
                 if(this->interceptor->hp > 0) this->interceptor->pt += (r->speed >3)?2:1;
                 return true;
             }

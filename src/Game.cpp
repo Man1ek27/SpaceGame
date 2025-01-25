@@ -15,6 +15,14 @@ void Game::StartConsole() {
    SetWindowPos(cw,HWND_TOPMOST,0,0,940,1080,SWP_NOMOVE); // always on top
 }
 
+void Game::SetSFMLWindow(HWND gw) {
+   RECT rect;
+   GetWindowRect(gw, &rect);
+   SetWindowPos(gw,HWND_TOPMOST,rect.left,rect.top,rect.right,rect.bottom,SWP_NOMOVE);
+   SetWindowLong(gw, GWL_EXSTYLE, GetWindowLong(gw, GWL_EXSTYLE) | WS_EX_LAYERED );
+   SetLayeredWindowAttributes(gw,0x000000, 0xff, LWA_ALPHA);
+}
+
 Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, CBITS), title){
     this->setActive(true);
 

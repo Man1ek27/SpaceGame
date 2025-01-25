@@ -12,6 +12,7 @@
 #include <SFML/Network.hpp>
 
 #include "Game.h"
+#define MAX_SOUNDS 40
 
 class MySounds {
 public:
@@ -23,7 +24,7 @@ public:
    MySounds();
    virtual ~MySounds();
    MySounds(const std::string);
-   MySounds(const std::string, std::initializer_list<string> );
+   MySounds(const std::string, std::initializer_list<std::string> );
    void AddFile(const std::string &);
    int Play(std::string, int , bool , float , bool);
    int Play(std::string, int , bool , float , bool, float , const sf::Vector2f &, float );

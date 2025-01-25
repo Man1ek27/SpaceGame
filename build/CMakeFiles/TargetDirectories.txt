@@ -1,0 +1,3 @@
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/build/CMakeFiles/Prog.dir
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/build/CMakeFiles/edit_cache.dir
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/build/CMakeFiles/rebuild_cache.dir

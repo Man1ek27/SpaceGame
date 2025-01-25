@@ -1,6 +1,9 @@
+#include <iostream>
 #include <locale>
 #include <windows.h>
 #include "../include/Game.h"
+
+
 
 Game theGame("Game !");
 int main(){
