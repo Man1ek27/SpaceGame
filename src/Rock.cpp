@@ -38,3 +38,26 @@ Rock::Rock(): sf::ConvexShape(){
     this->rot = rand()%5 -2;
 }
 
+void Rock::Update(){
+    //test na śmierć
+    if(this->hit){
+        if(this->getPointCount() > 3){
+            this->setPointCount(this->getPointCount() -1);
+            this->vertex.pop_back();
+            //odsuwa się, zwalnia 
+            this->move(50, 0);
+            this->speed = this->speed *1.1;
+            this->direct = rand()%7-3;
+        }
+        else{
+            this->kill = true;
+        }
+        this->hit = false;
+    }
+
+    //ruch
+    this->setPosition(this->getPosition().x - this->speed, this->getPosition().y - this->direct);
+    this->rotate(this->rot);
+}
+
+Rock::~Rock(){}
