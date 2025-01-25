@@ -24,6 +24,7 @@
 #define SCREENY 600
 
 #define CBITS 32
+#define MAX_SOUNDS 40
 
 
 

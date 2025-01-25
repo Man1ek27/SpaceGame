@@ -11,6 +11,7 @@
 #include <SFML/Network.hpp>
 
 #include "Game.h"
+#include "MySounds.h"
 
 
 

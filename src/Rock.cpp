@@ -29,7 +29,7 @@ Rock::Rock(): sf::ConvexShape(){
     this->vertex.push_back(this->getPoint(0));
 
     for(int nr =1; nr < points; nr++){
-        this->setPoint(nr, temp, transformPoint(this->getPoint(nr-1)));
+        this->setPoint(nr, temp.transformPoint(this->getPoint(nr-1)));
         this->vertex.push_back(this->getPoint(nr));
     }
 

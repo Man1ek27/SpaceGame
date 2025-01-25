@@ -11,11 +11,12 @@
 #include <SFML/Network.hpp>
 #include <SFML/Window.hpp>
 
+
 #include "Interceptor.h"
 #include "Game.h"
 
 
-class Rock: public sf::CircleShape{
+class Rock: public sf::ConvexShape{
     public:
         //statyczne tekstury
         static sf::Texture tx;

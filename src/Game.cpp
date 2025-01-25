@@ -4,6 +4,17 @@ std::vector <Rock> Game::Rocks;
 sf::Vertex Game::va[1000];
 sf::Font Game::Font;
 
+void Game::StartConsole() {
+   std::stringstream ss;
+   ss << "konsola" << time(0);
+   std::string s = ss.str();
+   std::wstring stemp = std::wstring(s.begin(), s.end());
+   LPCWSTR sw = stemp.c_str();
+   HWND cw = GetConsoleWindow(); // okno konsoli przypisuj� do cw dzi�ki bibliotece windows.h
+   SetWindowText(cw, sw); // zmieniam tytu� okna
+   SetWindowPos(cw,HWND_TOPMOST,0,0,940,1080,SWP_NOMOVE); // always on top
+}
+
 Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, CBITS), title){
     this->setActive(true);
 
@@ -211,3 +222,5 @@ bool Game::IsPointInsidePolygon(const sf::Transform &t, std::vector<sf::Vector2f
     }
     return true;
 }
+
+Game::~Game(){}
