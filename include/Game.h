@@ -27,7 +27,7 @@
 
 
 
-class MySounds;
+
 
 
 /// GAME 
