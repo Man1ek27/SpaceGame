@@ -16,7 +16,7 @@
 
 class MySounds {
 public:
-   std::string folder="sounds";
+   std::string folder="../sounds";
    std::string type="wav";
    std::map <std::string,sf::SoundBuffer> bufor;
    static sf::Sound sounds[MAX_SOUNDS];

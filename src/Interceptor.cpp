@@ -37,7 +37,7 @@ Interceptor::Interceptor() : sf::Sprite(){
     this->hpRect.setOutlineColor(sf::Color(0x000000ff));
     this->hpRect.setOutlineThickness(1);
 
-    this->ss << this->pt << "punktów";
+    this->ss << this->pt << " ponts";
     this->strPt.setFont(Game::Font);
     this->strPt.setCharacterSize(16);
     this->strPt.setPosition(SCREENX-200, SCREENY-20);
@@ -79,7 +79,7 @@ void Interceptor::CatchEvents(sf::Event &e){
 
 void Interceptor::Update(Game &theGame){
     //aktualizacja napisów
-    this->ss << this->pt << " punktów";
+    this->ss << this->pt << " points";
     this->strPt.setString(ss.str());
     this->ss.str("");
     this->ss << this->hp << " hp";

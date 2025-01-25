@@ -53,7 +53,7 @@ Game::Game(sf::String title) : sf::RenderWindow(sf::VideoMode(SCREENX, SCREENY, 
         this->bgtx.loadFromFile("../images/kosmo3.png");
     }
     else{
-        this->bgtx.loadFromFile("..images/kosmo2.png");
+        this->bgtx.loadFromFile("../images/kosmo2.png");
     }
 
     this->bg.setTexture(&(this->bgtx));
@@ -70,7 +70,7 @@ void Game::Run(){
     Bullet::tx.loadFromFile("../images/bullet2.png"); // animacja pocisków
     Rock::tx.loadFromFile("../images/rock.png"); 
     Rock::txg.loadFromFile("../images/rockg.png");
-    Game::Font.loadFromFile("..Fonts/OpenSans-Light.ttf");
+    Game::Font.loadFromFile("../fonts/OpenSans-Light.ttf");
     
     SetSFMLWindow(this->getSystemHandle());
     sf::Time start = Game::clock.getElapsedTime();
