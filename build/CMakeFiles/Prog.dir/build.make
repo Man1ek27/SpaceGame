@@ -68,11 +68,86 @@ include CMakeFiles/Prog.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Prog.dir/flags.make
 
+CMakeFiles/Prog.dir/src/Bullet.cpp.obj: CMakeFiles/Prog.dir/flags.make
+CMakeFiles/Prog.dir/src/Bullet.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
+CMakeFiles/Prog.dir/src/Bullet.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/Bullet.cpp
+CMakeFiles/Prog.dir/src/Bullet.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Prog.dir/src/Bullet.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/Bullet.cpp.obj -MF CMakeFiles\Prog.dir\src\Bullet.cpp.obj.d -o CMakeFiles\Prog.dir\src\Bullet.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Bullet.cpp
+
+CMakeFiles/Prog.dir/src/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prog.dir/src/Bullet.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Bullet.cpp > CMakeFiles\Prog.dir\src\Bullet.cpp.i
+
+CMakeFiles/Prog.dir/src/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prog.dir/src/Bullet.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Bullet.cpp -o CMakeFiles\Prog.dir\src\Bullet.cpp.s
+
+CMakeFiles/Prog.dir/src/Game.cpp.obj: CMakeFiles/Prog.dir/flags.make
+CMakeFiles/Prog.dir/src/Game.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
+CMakeFiles/Prog.dir/src/Game.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/Game.cpp
+CMakeFiles/Prog.dir/src/Game.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Prog.dir/src/Game.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/Game.cpp.obj -MF CMakeFiles\Prog.dir\src\Game.cpp.obj.d -o CMakeFiles\Prog.dir\src\Game.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Game.cpp
+
+CMakeFiles/Prog.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prog.dir/src/Game.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Game.cpp > CMakeFiles\Prog.dir\src\Game.cpp.i
+
+CMakeFiles/Prog.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prog.dir/src/Game.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Game.cpp -o CMakeFiles\Prog.dir\src\Game.cpp.s
+
+CMakeFiles/Prog.dir/src/Interceptor.cpp.obj: CMakeFiles/Prog.dir/flags.make
+CMakeFiles/Prog.dir/src/Interceptor.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
+CMakeFiles/Prog.dir/src/Interceptor.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/Interceptor.cpp
+CMakeFiles/Prog.dir/src/Interceptor.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Prog.dir/src/Interceptor.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/Interceptor.cpp.obj -MF CMakeFiles\Prog.dir\src\Interceptor.cpp.obj.d -o CMakeFiles\Prog.dir\src\Interceptor.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Interceptor.cpp
+
+CMakeFiles/Prog.dir/src/Interceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prog.dir/src/Interceptor.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Interceptor.cpp > CMakeFiles\Prog.dir\src\Interceptor.cpp.i
+
+CMakeFiles/Prog.dir/src/Interceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prog.dir/src/Interceptor.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Interceptor.cpp -o CMakeFiles\Prog.dir\src\Interceptor.cpp.s
+
+CMakeFiles/Prog.dir/src/MySounds.cpp.obj: CMakeFiles/Prog.dir/flags.make
+CMakeFiles/Prog.dir/src/MySounds.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
+CMakeFiles/Prog.dir/src/MySounds.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/MySounds.cpp
+CMakeFiles/Prog.dir/src/MySounds.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Prog.dir/src/MySounds.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/MySounds.cpp.obj -MF CMakeFiles\Prog.dir\src\MySounds.cpp.obj.d -o CMakeFiles\Prog.dir\src\MySounds.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\MySounds.cpp
+
+CMakeFiles/Prog.dir/src/MySounds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prog.dir/src/MySounds.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\MySounds.cpp > CMakeFiles\Prog.dir\src\MySounds.cpp.i
+
+CMakeFiles/Prog.dir/src/MySounds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prog.dir/src/MySounds.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\MySounds.cpp -o CMakeFiles\Prog.dir\src\MySounds.cpp.s
+
+CMakeFiles/Prog.dir/src/Rock.cpp.obj: CMakeFiles/Prog.dir/flags.make
+CMakeFiles/Prog.dir/src/Rock.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
+CMakeFiles/Prog.dir/src/Rock.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/Rock.cpp
+CMakeFiles/Prog.dir/src/Rock.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Prog.dir/src/Rock.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/Rock.cpp.obj -MF CMakeFiles\Prog.dir\src\Rock.cpp.obj.d -o CMakeFiles\Prog.dir\src\Rock.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Rock.cpp
+
+CMakeFiles/Prog.dir/src/Rock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prog.dir/src/Rock.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Rock.cpp > CMakeFiles\Prog.dir\src\Rock.cpp.i
+
+CMakeFiles/Prog.dir/src/Rock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prog.dir/src/Rock.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\Rock.cpp -o CMakeFiles\Prog.dir\src\Rock.cpp.s
+
 CMakeFiles/Prog.dir/src/main.cpp.obj: CMakeFiles/Prog.dir/flags.make
 CMakeFiles/Prog.dir/src/main.cpp.obj: CMakeFiles/Prog.dir/includes_CXX.rsp
 CMakeFiles/Prog.dir/src/main.cpp.obj: C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/src/main.cpp
 CMakeFiles/Prog.dir/src/main.cpp.obj: CMakeFiles/Prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Prog.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Prog.dir/src/main.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prog.dir/src/main.cpp.obj -MF CMakeFiles\Prog.dir\src\main.cpp.obj.d -o CMakeFiles\Prog.dir\src\main.cpp.obj -c C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\src\main.cpp
 
 CMakeFiles/Prog.dir/src/main.cpp.i: cmake_force
@@ -85,17 +160,27 @@ CMakeFiles/Prog.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Prog
 Prog_OBJECTS = \
+"CMakeFiles/Prog.dir/src/Bullet.cpp.obj" \
+"CMakeFiles/Prog.dir/src/Game.cpp.obj" \
+"CMakeFiles/Prog.dir/src/Interceptor.cpp.obj" \
+"CMakeFiles/Prog.dir/src/MySounds.cpp.obj" \
+"CMakeFiles/Prog.dir/src/Rock.cpp.obj" \
 "CMakeFiles/Prog.dir/src/main.cpp.obj"
 
 # External object files for target Prog
 Prog_EXTERNAL_OBJECTS =
 
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/Bullet.cpp.obj
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/Game.cpp.obj
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/Interceptor.cpp.obj
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/MySounds.cpp.obj
+C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/Rock.cpp.obj
 C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/src/main.cpp.obj
 C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/build.make
 C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/linkLibs.rsp
 C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/objects1.rsp
 C:/Users/Mariu/OneDrive/Dokumenty/C++/SFML/SpaceGame/bin/Prog.exe: CMakeFiles/Prog.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\bin\Prog.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable C:\Users\Mariu\OneDrive\Dokumenty\C++\SFML\SpaceGame\bin\Prog.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Prog.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -128,6 +128,126 @@ Prog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/build
 .PHONY : Prog/fast
 
+src/Bullet.obj: src/Bullet.cpp.obj
+.PHONY : src/Bullet.obj
+
+# target to build an object file
+src/Bullet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Bullet.cpp.obj
+.PHONY : src/Bullet.cpp.obj
+
+src/Bullet.i: src/Bullet.cpp.i
+.PHONY : src/Bullet.i
+
+# target to preprocess a source file
+src/Bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Bullet.cpp.i
+.PHONY : src/Bullet.cpp.i
+
+src/Bullet.s: src/Bullet.cpp.s
+.PHONY : src/Bullet.s
+
+# target to generate assembly for a file
+src/Bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Bullet.cpp.s
+.PHONY : src/Bullet.cpp.s
+
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/Interceptor.obj: src/Interceptor.cpp.obj
+.PHONY : src/Interceptor.obj
+
+# target to build an object file
+src/Interceptor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Interceptor.cpp.obj
+.PHONY : src/Interceptor.cpp.obj
+
+src/Interceptor.i: src/Interceptor.cpp.i
+.PHONY : src/Interceptor.i
+
+# target to preprocess a source file
+src/Interceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Interceptor.cpp.i
+.PHONY : src/Interceptor.cpp.i
+
+src/Interceptor.s: src/Interceptor.cpp.s
+.PHONY : src/Interceptor.s
+
+# target to generate assembly for a file
+src/Interceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Interceptor.cpp.s
+.PHONY : src/Interceptor.cpp.s
+
+src/MySounds.obj: src/MySounds.cpp.obj
+.PHONY : src/MySounds.obj
+
+# target to build an object file
+src/MySounds.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/MySounds.cpp.obj
+.PHONY : src/MySounds.cpp.obj
+
+src/MySounds.i: src/MySounds.cpp.i
+.PHONY : src/MySounds.i
+
+# target to preprocess a source file
+src/MySounds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/MySounds.cpp.i
+.PHONY : src/MySounds.cpp.i
+
+src/MySounds.s: src/MySounds.cpp.s
+.PHONY : src/MySounds.s
+
+# target to generate assembly for a file
+src/MySounds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/MySounds.cpp.s
+.PHONY : src/MySounds.cpp.s
+
+src/Rock.obj: src/Rock.cpp.obj
+.PHONY : src/Rock.obj
+
+# target to build an object file
+src/Rock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Rock.cpp.obj
+.PHONY : src/Rock.cpp.obj
+
+src/Rock.i: src/Rock.cpp.i
+.PHONY : src/Rock.i
+
+# target to preprocess a source file
+src/Rock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Rock.cpp.i
+.PHONY : src/Rock.cpp.i
+
+src/Rock.s: src/Rock.cpp.s
+.PHONY : src/Rock.s
+
+# target to generate assembly for a file
+src/Rock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Prog.dir\build.make CMakeFiles/Prog.dir/src/Rock.cpp.s
+.PHONY : src/Rock.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +281,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Prog
+	@echo ... src/Bullet.obj
+	@echo ... src/Bullet.i
+	@echo ... src/Bullet.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
+	@echo ... src/Interceptor.obj
+	@echo ... src/Interceptor.i
+	@echo ... src/Interceptor.s
+	@echo ... src/MySounds.obj
+	@echo ... src/MySounds.i
+	@echo ... src/MySounds.s
+	@echo ... src/Rock.obj
+	@echo ... src/Rock.i
+	@echo ... src/Rock.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

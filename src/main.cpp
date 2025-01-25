@@ -4,7 +4,6 @@
 #include "../include/Game.h"
 
 
-
 Game theGame("Game !");
 int main(){
     srand(time(NULL));

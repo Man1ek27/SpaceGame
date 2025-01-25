@@ -1,5 +1,8 @@
 #include "../include/Rock.h"
 
+sf::Texture Rock::tx;
+sf::Texture Rock::txg;
+
 Rock::Rock(): sf::ConvexShape(){
 
     //punktow będzie points Y

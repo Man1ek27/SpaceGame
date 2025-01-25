@@ -11,14 +11,19 @@ include_directories(${SFML_DIR}/include)
 link_directories(${SFML_DIR}/lib)
 link_directories(C:/Users/Mariu/OneDrive/Dokumenty/Library/flac-1.4.3-win/Win64)
 
-set(SOURCES src/main.cpp)
+#set(SOURCES src/main.cpp)
+
+#multiple
+file(GLOB SOURCES "src/*.cpp")
 
 # Tworzenie pliku wykonywalnego
 add_executable(Prog  ${SOURCES}) #WIN32
 
 
 
-add_definitions(-DSFML_STATIC)
+
+
+add_definitions(-DSFML_STATIC -D_UNICODE -DUNICODE)
 
 target_link_libraries(Prog
     sfml-graphics-s

@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
+#include <windows.h>
 
 #include "Interceptor.h"
 #include "Bullet.h"

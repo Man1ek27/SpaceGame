@@ -197,3 +197,5 @@ void Interceptor::Paint(Game &game){
     }
     
 }
+
+Interceptor::~Interceptor(){}

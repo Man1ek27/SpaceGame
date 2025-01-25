@@ -3,6 +3,7 @@
 std::vector <Rock> Game::Rocks;
 sf::Vertex Game::va[1000];
 sf::Font Game::Font;
+sf::Clock Game::clock;
 
 void Game::StartConsole() {
    std::stringstream ss;

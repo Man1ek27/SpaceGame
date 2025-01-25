@@ -14,7 +14,11 @@
 #include "MySounds.h"
 #include "Bullet.h"
 
-
+class Bullet;
+class Interceptor;
+class MySounds;
+class Game;
+class Rock;
 
 
 
